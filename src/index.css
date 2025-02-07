@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+
+  /* Custom scrollbar styles */
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgb(209 213 219);
+    border-radius: 3px;
+  }
+  
+  .dark .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: rgb(75 85 99);
+  }
+}
